@@ -47,6 +47,12 @@ export function NotionPageHeader({
     <header className='notion-header'>
       <div className='notion-nav-header'>
         {/* <Breadcrumbs block={block} rootOnly={false} /> */}
+        <components.PageLink
+          href={'/'}
+          className={cs(styles.navLink, 'breadcrumb', 'button')}
+        >
+          Jonathan Goya
+        </components.PageLink>
 
         <div className='notion-nav-header-rhs breadcrumbs'>
           {navigationLinks

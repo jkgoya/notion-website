@@ -5,7 +5,11 @@ import { resolveNotionPage } from '@/lib/resolve-notion-page'
 
 export const getStaticProps = async () => {
   try {
-    const props = await resolveNotionPage(domain)
+    // Use the specific home page ID instead of the root page
+    const props = await resolveNotionPage(
+      domain,
+      '225447549a2b809a9677c1427967cd23'
+    )
 
     return { props, revalidate: 10 }
   } catch (err) {
