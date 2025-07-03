@@ -46,7 +46,7 @@ export function NotionPageHeader({
   return (
     <header className='notion-header'>
       <div className='notion-nav-header'>
-        <Breadcrumbs block={block} rootOnly={true} />
+        {/* <Breadcrumbs block={block} rootOnly={false} /> */}
 
         <div className='notion-nav-header-rhs breadcrumbs'>
           {navigationLinks
@@ -79,7 +79,7 @@ export function NotionPageHeader({
             })
             .filter(Boolean)}
 
-          <ToggleThemeButton />
+          {/* <ToggleThemeButton /> */}
 
           {isSearchEnabled && <Search block={block} title={null} />}
         </div>

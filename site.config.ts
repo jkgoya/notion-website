@@ -2,7 +2,7 @@ import { siteConfig } from './lib/site-config'
 
 export default siteConfig({
   // the site's root Notion page (required)
-  rootNotionPageId: '225447549a2b8074b3e4d443f4223e21',
+  rootNotionPageId: '225447549a2b809a9677c1427967cd23',
 
   // if you want to restrict pages to a single notion workspace (optional)
   // (this should be a Notion ID; see the docs for how to extract this)
@@ -17,7 +17,8 @@ export default siteConfig({
   description: 'Jonathan Goya',
 
   // social usernames (optional)
-  github: 'jkgoya',
+  //github: 'jkgoya',
+  //bitbucket: 'jkgoya',
   // mastodon: '#', // optional mastodon profile URL, provides link verification
   // newsletter: '#', // optional newsletter URL
   // youtube: '#', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
@@ -48,16 +49,24 @@ export default siteConfig({
 
   // whether to use the default notion navigation style or a custom one with links to
   // important pages. To use `navigationLinks`, set `navigationStyle` to `custom`.
-  navigationStyle: 'default'
-  // navigationStyle: 'custom',
-  // navigationLinks: [
-  //   {
-  //     title: 'About',
-  //     pageId: 'f1199d37579b41cbabfc0b5174f4256a'
-  //   },
-  //   {
-  //     title: 'Contact',
-  //     pageId: '6a29ebcb935a4f0689fe661ab5f3b8d1'
-  //   }
-  // ]
+  //navigationStyle: 'default'
+  navigationStyle: 'custom',
+  navigationLinks: [
+    {
+      title: 'Home',
+      pageId: '225447549a2b809a9677c1427967cd23'
+    },
+    {
+      title: 'Research',
+      pageId: '225447549a2b80ad9c97cd4ddde8e478'
+    },
+    {
+      title: 'Teaching',
+      pageId: '225447549a2b802ca1f5fe66ecf83a16'
+    },
+    {
+      title: 'Performing',
+      pageId: '225447549a2b805b97b1dd4c96747ddb'
+    }
+  ]
 })
